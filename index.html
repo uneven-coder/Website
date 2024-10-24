@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pages/style&js/style.css">
     <!-- <link rel="stylesheet" href="content-style.css"> -->
 </head>
-
 <body>
     <header>
         <MenuNav id="NavBar">
             <h2 class="pagename">
-                Home - 
+                Home -
             </h2>
             <input type="checkbox" id="burger-toggle" style="display: none;">
             <label for="burger-toggle" class="burger">
@@ -45,7 +43,6 @@
                 </ul>
             </nav>
         </MenuNav>
-        
         <!-- <div id="Breadcrumbs" style="color: #fff;"></div> -->
     </header>
     <accmenu id="accmenu" class="nointeract">
@@ -55,73 +52,69 @@
         </label>
         <acc class="accessibility-menu">
             <h1>Accessibility menu</h1>
+            <div class="item"> <label for="font-size">Font Size:</label> <input type="range" id="font-size" min="10"
+                    max="30" step="1"> </div>
             <div class="item">
                 <label for="colorPicker">Choose Text Color:</label>
                 <input type="color" id="colorPicker" onchange="changeColor()" value="#ffffff">
             </div>
             <div class="item">
+                <label for="scrollbarSize">Increase Scrollbar Size:</label>
+                <input type="checkbox" id="scrollbarSizeCheckbox" onchange="changeScrollbarSize()">
+            </div>
+            <div class="item">
                 <button id="resetButton" onclick="resetStyles()">Reset Styles</button>
             </div>
-
-
         </acc>
-        </nav>
     </accmenu>
     <div id="page">
+        <!-- <div class="popup" style="display:flex;flex-direction:column;align-items:center;justify-content:center;position:fixed;z-index:999;background-color:#1b1b1bc7;width:100%;height:100%"><h1 class="close" style="color:#f0f8ff;cursor:pointer;-webkit-user-select:none;-ms-user-select:none;user-select:none">Please fill out this form </h1><iframe allowfullscreen frameborder="0" height="780px" marginheight="0" marginwidth="0" mozallowfullscreen msallowfullscreen src="https://forms.office.com/Pages/ResponsePage.aspx?id=IyrqxnTVZ0aUobIDebTrejL48yjkvJtMsaRzvS9rdMJUMTVTSDRNUkhMQU9OTDRIMzVRS01SSlIwTi4u&embed=true" style="border:none;max-width:100%;max-height:100vh" webkitallowfullscreen width="640px"></iframe></div> -->
         <section>
-            <div class="TitleCard-MAIN" >
-                <img src="assets/proffestional media/dog.png" alt="">
+            <div class="TitleCard-MAIN">
+                <img src="assets/proffestional media/273776184_10165863690695417_4694846718783791066.jpg" alt=""
+                    class="imagesource" style="object-position: 43% 47%;">
                 <div class="textleft">
                     <h2>Who am i?</h2>
-                    <p>I like to create and design, so I enjoy coding and playing creative games. I do many code
-                        projects, some of which are coded in
-                        <span style="color: var(--color-HTML);">HTML</span>,
-                        <span style="color: var(--color-CSharp);">C#</span>,
-                        <span style="color: var(--color-Py);">Python</span>, and
-                        <span style="color: var(--color-CSS);">CSS</span>.
-                        Although many of the Python projects I work on are for a game I play, which I will discuss in
-                        <a href="personal-projects.html" style="color: var(--color-Areference);">Personal-projects</a>.
-                        &gt;
-                        <span style="color: var(--color-SFS);">SpaceFlight Simulator</span>.
-                    </p>
+                    <p>Hi there, I'm Callum. I'm passionate about creating, designing, and coding. Whether it's making websites with <span style="color: var(--color-HTML);">HTML</span> & <span style="color: var(--color-CSS);">CSS</span>, building applications with <span style="color: var(--color-CSharp);">C#</span>, making scripts with <span style="color: var(--color-Py);">Python</span>, I love to create.</p>
+                    <p>I love to game and i offten make mods and make my own games based of games i play, especially in projects related to a game I'm deeply engaged in: <a href="pages\About me\Personal Projects.html" style="color: var(--color-Areference);">Personal Projects</a>. Here, Is where i make most projects.</p>
                 </div>
-                <!-- <a href="#" class="btn btn-primary">Call to Action</a> -->
+                <!-- <a href="#" class="btn btn-primary"></a> -->
             </div>
-            <!-- <div class="TitleCard">
-                <img src="assets/background-other-page content/space-19070_960_720.jpg" alt="">
-                <h2>Hello, I'm Cratior</h2>
-                <p>my passion lies in design and creation. I enjoy coding and have gained considerable experience in both making and developing projects. Im excited to continue exploring and expanding my skills in the world of design and technology.</p>
-                <a href="#" class="action">Link</a>
-            </div> -->
             <div class="contents">
-
                 <div class="TitleCard">
-                    <img src="assets/background-other-page content/space-19070_960_720.jpg" alt=""class="imagesource"> <span>src: pixabay.com</span>
+                    <img src="assets/background-other-page content/space-19070_960_720.jpg" alt="" class="imagesource">
+                    <span>src: pixabay.com</span>
                     <h2>Coding</h2>
-                    <p>In coding, engage in various projects involving Python, HTML, and C#. Through a series of continuous self-assigned code projects, I've taught myself these languages and honed my skills.</p>
+                    <p>In coding, ive done many projects involving Python, HTML, and C#. Through a series of
+                        continuous self-assigned code projects, I've taught myself these languages and improved my
+                        skills.
+                    </p>
                     <!-- <a href="#" class="action">Link</a> -->
                 </div>
-
                 <div class="TitleCard">
-                    <img src="assets/background-other-page content/Mechanical-design-engineer-role.jpg" alt=""class="imagesource"> <span>src: unkown</span>
+                    <img src="assets/background-other-page content/Mechanical-design-engineer-role.jpg" alt=""
+                        class="imagesource"> <span>src: unknown</span>
                     <h2>design</h2>
-                    <p>I've gained valuable experience through both academic projects and work experience. For my academic project, I designed and built a speaker using 2D CAD, using and utilizing soldering and assembly.
-                        During work experience, I utilized 3D CAD to create phone stands, developed robotic guards to prevent shaking, and designed a manufacturing belt for sorting goods using a specialized program. Throughout these experiences, I taught myself as I progressed, achieving successful outcomes in all projects.</p>
+                    <p>I've gained valuable experience through both academic projects and work experience. For my
+                        academic project, I designed and built a speaker using 2D CAD, using and utilizing soldering and
+                        assembly.
+                        During work experience, I utilized 3D CAD to create phone stands, developed robotic guards to
+                        prevent shaking, and designed a manufacturing belt for sorting goods using a specialized
+                        program. Throughout these experiences, I taught myself as I progressed, achieving successful
+                        outcomes in all projects.</p>
                     <!-- <a href="#" class="action">Link</a> -->
                 </div>
-
             </div>
-
             <div>
         </section>
+        <embed src="UserForm.html" type="">
     </div>
-
-    <footer class="footer" id="k" >
+    <footer class="footer" id="k">
         <div class="container row" id="k">
             <div class="footer-col" id="k">
                 <h4>More About Me</h4>
                 <ul>
-                    <li><a href="https://profile.indeed.com/?hl=en_GB&co=GB&from=gnav-homepage" id="footertext" >My Indeed Profile</a></li>
+                    <li><a href="CallumDuncan CV.pdf" id="footertext">My CV</a></li>
                     <li><a href="https://cratior.github.io/My-portfolio/" id="footertext">My old portfolio</a></li>
                 </ul>
             </div>
@@ -136,15 +129,17 @@
             <div class="footer-col" id="k">
                 <h4>Other</h4>
                 <ul>
-                    <li><a href="#" id="footertext">Asset sources</a></li>
+                    <li><a href="Asset Sources.pdf" id="footertext">Asset sources</a></li>
                 </ul>
             </div>
             <div class="footer-col" id="k">
                 <h4>Follow Me</h4>
                 <div class="social-links">
-                    <a href="https://github.com/Cratior" class="social-icon" class="nointeract"><span><img src="assets/background-other-page content/github-color.svg" alt="GitHub"></span></a>
-                    <a href="https://www.tiktok.com/@cratior?_t=8jncEDJkFDV&_r=1" class="social-icon" class="nointeract"><span><img src="assets/background-other-page content/tik-tok (1).png" alt="TikTok"></span></a>
-                    <a href="https://profile.indeed.com/?hl=en_GB&co=GB&from=gnav-homepage" class="nointeract" class="social-icon"><span><img src="assets/background-other-page content/linkedin.png" alt="Indeed"></span></a>
+                    <a href="https://github.com/Cratior" class="social-icon" class="nointeract"><span><img
+                                src="assets/background-other-page content/github-color.svg" alt="GitHub"></span></a>
+                    <a href="https://profile.indeed.com/?hl=en_GB&co=GB&from=gnav-homepage" class="nointeract"
+                        class="social-icon"><span><img src="assets/background-other-page content/linkedin.png"
+                                alt="Indeed"></span></a>
                     <!-- <a href="" class="social-icon"><span><img src="" alt=""></span></a> -->
                 </div>
             </div>
@@ -152,5 +147,4 @@
     </footer>
     <script src="pages/style&js/script.js"></script>
 </body>
-
 </html>

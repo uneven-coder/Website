@@ -46,7 +46,6 @@
                 </ul>
             </nav>
         </MenuNav>
-
         <!-- <div id="Breadcrumbs" style="color: #fff;"><p></p></div> -->
     </header>
     <accmenu id="accmenu" class="nointeract">
@@ -56,6 +55,8 @@
         </label>
         <acc class="accessibility-menu">
             <h1>Accessibility menu</h1>
+            <div class="item"> <label for="font-size">Font Size:</label> <input type="range" id="font-size" min="10"
+                    max="30" step="1"> </div>
             <div class="item">
                 <label for="colorPicker">Choose Text Color:</label>
                 <input type="color" id="colorPicker" onchange="changeColor()" value="#ffffff">
@@ -63,8 +64,6 @@
             <div class="item">
                 <button id="resetButton" onclick="resetStyles()">Reset Styles</button>
             </div>
-
-
         </acc>
         </nav>
     </accmenu>
@@ -72,7 +71,8 @@
         <section>
             <div class="TitleCard-MAIN">
                 <img src="../../assets/background-other-page content/sfs_steam_banner_616x353.jpg" alt=""
-                    class="imagesource" style="object-position: 8% 47%;"> <span>src: store.steampowered.com/Spaceflight_Simulator/</span>
+                    class="imagesource" style="object-position: 8% 47%;"> <span>src:
+                    store.steampowered.com/Spaceflight_Simulator/</span>
                 <div class="textleft">
                     <h2>What projects do i do?</h2>
                     <p>Most projects that i do are for a game called <a
@@ -82,42 +82,103 @@
                         style then you can fly the rocket and goto planets. But, due to how it saves, its physics and
                         just how it works i have done many projects within the game with python like save editing and
                         building compelx builds with the physics. <br>
-                        I call these projects, as i often work with a group or have the games community intrest supporting me.
+                        I call these projects, as i often work with a group or have the games community intrest
+                        supporting me.
                     </p>
                 </div>
                 <!-- <a href="#" class="btn btn-primary">Call to Action</a> -->
             </div>
             <div class="contents">
-
                 <div class="TitleCard">
-                    <img src="../../../../assets/personal photo/MarsMReen.png" alt="" class="imagesource">
+                    <img src="../../assets/personal photo/MarsMReen.png" alt="" class="imagesource">
                     <!-- <span>src: google.com</span> -->
                     <h2>Space</h2>
-                    <p>SpaceFlight Simulator is a space game and i do play it as "intended" sometimes. This image is a lander with a rover inside landing on marse once landed its top will open and the rover can drive out, eventhough i was playing normaly i still made a custom hinge to let the top open and close</p>
+                    <p>SpaceFlight Simulator is a space game and i do play it as "intended" sometimes. This image is a
+                        lander with a rover inside landing on marse once landed its top will open and the rover can
+                        drive out, eventhough i was playing normaly but i still made a custom hinge to let the top open
+                        and close.</p>
                     <!-- <a href="#" class="action">Link</a> -->
                 </div>
-
                 <div class="TitleCard">
-                    <img src="../../../../assets/personal photo/VannilaCockipitHinges.png" alt="" class="imagesource">
+                    <img src="../../assets/personal photo/VannilaCockipitHinges.png" alt="" class="imagesource">
                     <!-- <span>src: google.com</span> -->
                     <h2>Mechanics</h2>
-                    <p>Being a game it has weird physics, it does has a custom physics engine inside unity so its physics is a bit better but i can still use it to my advantage,</p>
+                    <p>Being a game it has weird physics, it does has a custom physics engine inside unity so its
+                        physics is a bit better but i can still use it to my advantage.</p>
                     <!-- <a href="#" class="action">Link</a> -->
                 </div>
-
-            </div>
-
-            <div>
+                <div class="TitleCard" id="no" style="height: fit-content;">
+                    <div class="radiorow" id="no">
+                        <div class="arrow left-arrow">&lt;</div>
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <input type="radio" name="slide" id="slide2">
+                        <input type="radio" name="slide" id="slide3">
+                        <div class="arrow right-arrow">&gt;</div>
+                        <div class="slider" id="no">
+                            <div class="slide" id="slide1">
+                                <img src="../../assets/personal photo/PhantomTakeoffLowQ.png" alt=""
+                                    class="imagesource">
+                                <!-- <span>src: google.com</span> -->
+                                <h2>Recreations</h2>
+                                <p style="font-size: large; font-weight: 500; line-height: 140%; word-spacing: 120%;">In
+                                    spaceflight simulator a big part is recreations, many people like to recreate real
+                                    projects/rockets in-game, I recreate planes as I find them more interesting.</p>
+                            </div>
+                            <div class="slide" id="slide2">
+                                <img src="../../assets\background-other-page content\kybermysyber saturn v.jpg" alt=""
+                                    class="imagesource"
+                                    style="object-position: 25% 50%;max-height: 407px;object-fit: cover;">
+                                <span>src: kybermysyber - Discord</span>
+                                <h2>Real life rockets</h2>
+                                <p style="font-size: large; font-weight: 500; line-height: 140%; word-spacing: 120%;">
+                                    Here is an example of a Saturn v rocket made by kybermysyber on the official sfs
+                                    discord this is just a example of the builds users make but sometimes they even
+                                    recreate the mission that the rocket did aswell.</p>
+                            </div>
+                            <div class="slide" id="slide3">
+                                <img src="../../assets/personal photo/TardisBuild - border.png" alt=""
+                                    class="imagesource"
+                                    style="object-position: 25% 50%;max-height: 407px;object-fit: cover;">
+                                <!-- <span>src: google.com</span> -->
+                                <h2>Fiction recreations</h2>
+                                <p style="font-size: large; font-weight: 500; line-height: 140%; word-spacing: 120%;">We
+                                    dont always recreate real life stuff for eaxmple this tardis i made, i made it has
+                                    500 parts and can fly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="TitleCard">
+                    <div class="imgcard">
+                        <img src="../../assets/personal photo/GeneratedSystem.gif" alt="" class="imagesource1">
+                        <img src="../../assets/personal photo/ImageToPARTSSaturnV.png" alt="" class="imagesource1">
+                        <img src="../../assets/personal photo/ProcedualSpaceStationMaker.png" alt=""
+                            class="imagesource1">
+                    </div>
+                    <!-- <span>src: google.com</span> -->
+                    <h2>Coding</h2>
+                    <div class="titlepbox">
+                        <p class="numbered"> In Spaceflight Simulator, I've created various scripts to manipulate game
+                            data saved in JSON-formatted text files.</p>
+                        <p class="numbered"> One script procedurally generates a solar system by assigning ecosystems,
+                            textures, and moons to planets based on their distance from the sun.</p>
+                        <p class="numbered"> Another script uses a simple AI to recreate user-inputted images for the
+                            game, generating an output image and a file for in-game loading. For instance, the middle
+                            picture of the Saturn V showcases this image recreation.</p>
+                        <p class="numbered"> The last script is of a procedural space station maker, connecting
+                            structural parts through docking ports. Users can define the number of modules, and the
+                            script rotates and connects them accordingly.</p>
+                    </div>
+                    <!-- <a href="#" class="action">Link</a> -->
+                </div>
         </section>
     </div>
-
     <footer class="footer" id="k">
         <div class="container row" id="k">
             <div class="footer-col" id="k">
                 <h4>More About Me</h4>
                 <ul>
-                    <li><a href="https://profile.indeed.com/?hl=en_GB&co=GB&from=gnav-homepage" id="footertext">My
-                            Indeed Profile</a></li>
+                    <li><a href="../../CallumDuncan CV.pdf" id="footertext">My CV</a></li>
                     <li><a href="https://cratior.github.io/My-portfolio/" id="footertext">My old portfolio</a></li>
                 </ul>
             </div>
@@ -132,7 +193,7 @@
             <div class="footer-col" id="k">
                 <h4>Other</h4>
                 <ul>
-                    <li><a href="#" id="footertext">Asset sources</a></li>
+                    <li><a href="../../Asset Sources.pdf" id="footertext">Asset sources</a></li>
                 </ul>
             </div>
             <div class="footer-col" id="k">
@@ -141,9 +202,6 @@
                     <a href="https://github.com/Cratior" class="social-icon" class="nointeract"><span><img
                                 src="../../assets/background-other-page content/github-color.svg"
                                 alt="GitHub"></span></a>
-                    <a href="https://www.tiktok.com/@cratior?_t=8jncEDJkFDV&_r=1" class="social-icon"
-                        class="nointeract"><span><img src="../../assets/background-other-page content/tik-tok (1).png"
-                                alt="TikTok"></span></a>
                     <a href="https://profile.indeed.com/?hl=en_GB&co=GB&from=gnav-homepage" class="nointeract"
                         class="social-icon"><span><img src="../../assets/background-other-page content/linkedin.png"
                                 alt="Indeed"></span></a>
