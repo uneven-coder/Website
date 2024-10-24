@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style&js/style.css">
+    <!-- <link rel="stylesheet" href="content-style.css"> -->
+</head>
+
+<body>
+    <header>
+        <MenuNav id="NavBar">
+            <h2 class="pagename">
+                Academics - 
+            </h2>
+            <input type="checkbox" id="burger-toggle" style="display: none;">
+            <label for="burger-toggle" class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../../index.html" >Home</a></li>
+                    <li class="dropdown">
+                        <input type="checkbox" id="college-dropdown-toggle">
+                        <label for="college-dropdown-toggle">College</label>
+                        <ul class="submenu">
+                            <li><a href="../College/Unit9.html">Unit 9</a></li>
+                            <li><a href="../College/Unit3&13.html">Unit 3&13</a></li>
+                            <li><a href="../College/Unit14.html" >Unit 14</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <input type="checkbox" id="about-me-dropdown-toggle">
+                        <label for="about-me-dropdown-toggle">About Me</label>
+                        <ul class="submenu">
+                            <li><a href="../About me/Personal Projects.html">Personal Projects</a></li>
+                            <li><a href="../About me/Academics.html" class="dropdownpage">Academics</a></li>
+                            <li><a href="../About me/About-me.html">About Me</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../pages/Work.html">Work</a></li>
+                </ul>
+            </nav>
+        </MenuNav>
+        
+        <!-- <div id="Breadcrumbs" style="color: #fff;"><p></p></div> -->
+    </header>
+    <accmenu id="accmenu" class="nointeract">
+        <input type="checkbox" id="acc-toggle" style="display: none;">
+        <label for="acc-toggle" class="accs">
+            <img src="../../assets/background-other-page content/accesibility.png" alt="">
+        </label>
+        <acc class="accessibility-menu">
+            <h1>Accessibility menu</h1>
+            <div class="item">
+                <label for="colorPicker">Choose Text Color:</label>
+                <input type="color" id="colorPicker" onchange="changeColor()" value="#ffffff">
+            </div>
+            <div class="item">
+                <button id="resetButton" onclick="resetStyles()">Reset Styles</button>
+            </div>
+
+
+        </acc>
+        </nav>
+    </accmenu>
+    <div id="page">
+        <section>
+            <div class="TitleCard-MAIN" >
+                <img src="../../assets/background-other-page content/placeholder.jpg" alt="" class="imagesource"> <span>src: google.com</span>
+                <div class="textleft">
+                    <h2>Who am i</h2>
+                    <p>I like to create and design, so I enjoy coding and playing creative games. I do many code
+                        projects, some of which are coded in
+                        <span style="color: var(--color-HTML);">HTML</span>,
+                        <span style="color: var(--color-CSharp);">C#</span>,
+                        <span style="color: var(--color-Py);">Python</span>, and
+                        <span style="color: var(--color-CSS);">CSS</span>.
+                        Although many of the Python projects I work on are for a game I play, which I will discuss in
+                        <a href="personal-projects.html" style="color: var(--color-Areference);">Personal-projects</a>.
+                        &gt;
+                        <span style="color: var(--color-SFS);">SpaceFlight Simulator</span>.
+                    </p>
+                </div>
+                <!-- <a href="#" class="btn btn-primary">Call to Action</a> -->
+            </div>
+            <div class="contents">
+
+                <div class="TitleCard">
+                    <img src="../../assets/background-other-page content/placeholder.jpg" alt=""class="imagesource"> <span>src: google.com</span>
+                    <h2></h2>
+                    <p></p>
+                    <!-- <a href="#" class="action">Link</a> -->
+                </div>
+
+                <div class="TitleCard">
+                    <img src="../../assets/background-other-page content/placeholder.jpg" alt=""class="imagesource"> <span>src: google.com</span>
+                    <h2></h2>
+                    <p></p>
+                    <!-- <a href="#" class="action">Link</a> -->
+                </div>
+
+            </div>
+
+            <div>
+        </section>
+    </div>
+
+    <footer class="footer" id="k" >
+        <div class="container row" id="k">
+            <div class="footer-col" id="k">
+                <h4>More About Me</h4>
+                <ul>
+                    <li><a href="https://profile.indeed.com/?hl=en_GB&co=GB&from=gnav-homepage" id="footertext" >My Indeed Profile</a></li>
+                    <li><a href="https://cratior.github.io/My-portfolio/" id="footertext">My old portfolio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" id="k">
+                <!-- Add Github stuff -->
+                <h4>My Best/Favorite Github Stuff</h4>
+                <ul>
+                    <li><a href="https://github.com/Cratior/S0rting-bar" id="footertext">Bar-Sorting</a></li>
+                    <li><a href="https://github.com/Cratior/c2GridCipher" id="footertext">GridCipher</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" id="k">
+                <h4>Other</h4>
+                <ul>
+                    <li><a href="#" id="footertext">Asset sources</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" id="k">
+                <h4>Follow Me</h4>
+                <div class="social-links">
+                    <a href="https://github.com/Cratior" class="social-icon" class="nointeract"><span><img src="../../assets/background-other-page content/github-color.svg" alt="GitHub"></span></a>
+                    <a href="https://www.tiktok.com/@cratior?_t=8jncEDJkFDV&_r=1" class="social-icon" class="nointeract"><span><img src="../../assets/background-other-page content/tik-tok (1).png" alt="TikTok"></span></a>
+                    <a href="https://profile.indeed.com/?hl=en_GB&co=GB&from=gnav-homepage" class="nointeract" class="social-icon"><span><img src="../../assets/background-other-page content/linkedin.png" alt="Indeed"></span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../style&js/script.js"></script>
+</body>
+
+</html>
